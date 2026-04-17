@@ -62,7 +62,7 @@ body {
   text-transform: uppercase;
   letter-spacing: clamp(1.4px, 0.3vw, 2.9px);
   line-height: 1.33;
-  font-size: clamp(11px, 1.6vw, 15px);
+  font-size: clamp(12px, 1.72vw, 16px);
   opacity: 0;
   transform: translateY(10px);
   animation: fade-up 0.6s ease-out forwards;
@@ -86,6 +86,7 @@ body {
 
 .name-preeti {
   font-family: "Allura", "Great Vibes", "Brush Script MT", cursive;
+  font-size: clamp(54px, 10.4vw, 104px);
 }
 
 .ampersand {
@@ -113,7 +114,7 @@ body {
   font-weight: 700;
   line-height: 1.4;
   letter-spacing: clamp(1px, 0.2vw, 2.4px);
-  font-size: clamp(10px, 1.42vw, 14px);
+  font-size: clamp(11px, 1.54vw, 15px);
 }
 
 .event-block p {
@@ -126,7 +127,7 @@ body {
 }
 
 .reception {
-  margin-top: clamp(34px, 4.6vw, 52px);
+  margin-top: clamp(48px, 6vw, 72px);
 }
 
 .reception h2,
@@ -138,7 +139,7 @@ body {
   margin-top: clamp(5px, 0.8vw, 9px);
   display: inline-block;
   color: inherit;
-  font-size: clamp(10px, 1.36vw, 13px);
+  font-size: clamp(11px, 1.48vw, 14px);
   line-height: 1.42;
   letter-spacing: clamp(1px, 0.18vw, 2.1px);
   text-transform: uppercase;
@@ -159,7 +160,7 @@ body {
 }
 
 .reception .venue-address-link {
-  font-size: clamp(11px, 1.5vw, 14px);
+  font-size: clamp(12px, 1.62vw, 15px);
   line-height: 1.45;
 }
 
@@ -167,7 +168,7 @@ body {
   margin: clamp(16px, 2.4vw, 24px) 0 0;
   text-align: center;
   color: var(--gold);
-  font-size: clamp(12px, 1.6vw, 16px);
+  font-size: clamp(13px, 1.72vw, 17px);
   letter-spacing: clamp(0.4px, 0.08vw, 1px);
   line-height: 1.45;
   font-weight: 600;
@@ -202,6 +203,7 @@ body {
 
 .overlay-content .invite-line:nth-of-type(5) {
   animation-delay: 0.44s;
+  margin-bottom: clamp(10px, 1.8vw, 18px);
 }
 
 .overlay-content .names:first-of-type {
@@ -214,6 +216,7 @@ body {
 
 .overlay-content .names:last-of-type {
   animation-delay: 0.76s;
+  margin-bottom: clamp(14px, 2.4vw, 28px);
 }
 
 .overlay-content .event-block.wedding {
@@ -320,11 +323,11 @@ body {
   }
 
   .invite-line {
-    font-size: clamp(11px, 2.45vw, 14px);
+    font-size: clamp(12px, 2.65vw, 15px);
   }
 
   .reception {
-    margin-top: clamp(24px, 4vw, 34px);
+    margin-top: clamp(36px, 5.6vw, 52px);
   }
 
   .closing-line {
@@ -351,18 +354,18 @@ body {
   .event-block h2,
   .event-block p,
   .event-block a {
-    font-size: clamp(10px, 2.4vw, 12px);
+    font-size: clamp(11px, 2.6vw, 13px);
     letter-spacing: clamp(0.7px, 0.2vw, 1.4px);
     line-height: 1.35;
   }
 
   .reception .venue-address-link {
-    font-size: clamp(11px, 2.55vw, 13px);
+    font-size: clamp(12px, 2.75vw, 14px);
     line-height: 1.4;
   }
 
   .closing-line {
-    font-size: clamp(11px, 2.4vw, 13px);
+    font-size: clamp(12px, 2.6vw, 14px);
     max-width: 92%;
     letter-spacing: 0.4px;
     margin-top: clamp(20px, 4vw, 28px);
