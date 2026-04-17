@@ -86,7 +86,7 @@ body {
   margin: clamp(8px, 1.4vw, 16px) 0;
   font-size: clamp(36px, 6.2vw, 64px);
   line-height: 1;
-  color: var(--text);
+  color: var(--gold);
   opacity: 0;
   transform: translateY(12px);
   animation: fade-up 0.65s ease-out forwards;
