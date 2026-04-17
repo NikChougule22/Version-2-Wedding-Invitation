@@ -32,6 +32,7 @@ body {
 .invite-card {
   width: min(100%, 760px);
   position: relative;
+  overflow: hidden;
   animation: card-float-in 0.9s ease-out both;
 }
 
@@ -156,7 +157,7 @@ body {
 }
 
 .closing-line {
-  margin: clamp(24px, 3.5vw, 34px) 0 0;
+  margin: clamp(16px, 2.4vw, 24px) 0 0;
   text-align: center;
   color: var(--gold);
   font-size: clamp(11px, 1.45vw, 15px);
@@ -266,7 +267,7 @@ body {
 
 @media (max-width: 640px) {
   .page {
-    min-height: 100dvh;
+    min-height: auto;
     padding: 8px;
     overflow-x: hidden;
   }
@@ -334,9 +335,10 @@ body {
   }
 
   .closing-line {
-    font-size: clamp(10px, 2.3vw, 12px);
+    font-size: clamp(9px, 1.95vw, 11px);
     max-width: 92%;
     letter-spacing: 0.4px;
-    margin-top: clamp(18px, 5vw, 28px);
+    margin-top: clamp(10px, 2.2vw, 16px);
+    line-height: 1.3;
   }
 }
