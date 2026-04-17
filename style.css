@@ -290,12 +290,12 @@ body {
 
   .overlay-content {
     min-height: 100%;
-    padding-top: 76px;
-    padding-bottom: 18px;
+    padding-top: 92px;
+    padding-bottom: 10px;
   }
 
   .top-gap {
-    margin-top: 48px;
+    margin-top: 56px;
   }
 
   .event-block {
@@ -309,12 +309,17 @@ body {
   .reception {
     margin-top: clamp(28px, 5vw, 42px);
   }
+
+  .closing-line {
+    margin-top: auto;
+    margin-bottom: clamp(6px, 1.8vw, 12px);
+  }
 }
 
 @media (max-width: 480px) {
   .overlay-content {
-    padding-top: 70px;
-    padding-bottom: 16px;
+    padding-top: 86px;
+    padding-bottom: 10px;
   }
 
   .names {
@@ -342,7 +347,8 @@ body {
     font-size: clamp(9px, 1.95vw, 11px);
     max-width: 92%;
     letter-spacing: 0.4px;
-    margin-top: clamp(10px, 2.2vw, 16px);
+    margin-top: auto;
+    margin-bottom: clamp(8px, 2.4vw, 14px);
     line-height: 1.3;
   }
 }
