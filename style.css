@@ -300,12 +300,13 @@ body {
 
   .overlay-content {
     min-height: 100%;
-    padding-top: 88px;
+    padding-top: 82px;
     padding-bottom: 18px;
+    transform: translateY(58px);
   }
 
   .top-gap {
-    margin-top: 52px;
+    margin-top: 46px;
   }
 
   .event-block {
@@ -328,8 +329,9 @@ body {
 
 @media (max-width: 480px) {
   .overlay-content {
-    padding-top: 80px;
+    padding-top: 74px;
     padding-bottom: 16px;
+    transform: translateY(52px);
   }
 
   .names {
