@@ -300,12 +300,12 @@ body {
 
   .overlay-content {
     min-height: 100%;
-    padding-top: 118px;
-    padding-bottom: 10px;
+    padding-top: 88px;
+    padding-bottom: 18px;
   }
 
   .top-gap {
-    margin-top: 68px;
+    margin-top: 52px;
   }
 
   .event-block {
@@ -317,19 +317,19 @@ body {
   }
 
   .reception {
-    margin-top: clamp(28px, 5vw, 42px);
+    margin-top: clamp(24px, 4vw, 34px);
   }
 
   .closing-line {
-    margin-top: auto;
+    margin-top: clamp(18px, 3vw, 26px);
     margin-bottom: clamp(6px, 1.8vw, 12px);
   }
 }
 
 @media (max-width: 480px) {
   .overlay-content {
-    padding-top: 108px;
-    padding-bottom: 10px;
+    padding-top: 80px;
+    padding-bottom: 16px;
   }
 
   .names {
@@ -357,7 +357,7 @@ body {
     font-size: clamp(9px, 1.95vw, 11px);
     max-width: 92%;
     letter-spacing: 0.4px;
-    margin-top: auto;
+    margin-top: clamp(16px, 3.2vw, 24px);
     margin-bottom: clamp(8px, 2.4vw, 14px);
     line-height: 1.3;
   }
