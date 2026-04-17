@@ -1,0 +1,247 @@
+:root {
+  --page-bg: #ececec;
+  --gold: #cb8732;
+  --green: #2b5f3b;
+  --text: #1f3b2d;
+  --link: #1c5f93;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--page-bg);
+}
+
+body {
+  font-family: "Proxima Noma", "Proxima Nova", "Montserrat", "Segoe UI", sans-serif;
+  color: var(--text);
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 12px;
+}
+
+.invite-card {
+  width: min(100%, 760px);
+  position: relative;
+  animation: card-float-in 0.9s ease-out both;
+}
+
+.invite-bg {
+  width: 100%;
+  display: block;
+  border-radius: 0;
+  transform-origin: center center;
+  animation: bg-breathe 14s ease-in-out infinite alternate;
+}
+
+.overlay-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: clamp(120px, 18vw, 170px) clamp(24px, 5vw, 40px) clamp(24px, 4vw, 38px);
+}
+
+.invite-line {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: clamp(1.6px, 0.35vw, 3.4px);
+  line-height: 1.35;
+  font-size: clamp(9px, 1.8vw, 20px);
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fade-up 0.6s ease-out forwards;
+}
+
+.top-gap {
+  margin-top: clamp(60px, 10vw, 96px);
+}
+
+.names {
+  margin: clamp(16px, 2vw, 26px) 0 0;
+  font-family: "Moontime", "Great Vibes", "Brush Script MT", cursive;
+  color: var(--gold);
+  font-weight: 400;
+  line-height: 1;
+  font-size: clamp(44px, 11vw, 130px);
+  opacity: 0;
+  transform: translateY(16px) scale(0.98);
+  animation: fade-up 0.75s ease-out forwards;
+}
+
+.ampersand {
+  margin: clamp(12px, 2vw, 24px) 0;
+  font-size: clamp(44px, 8vw, 94px);
+  line-height: 1;
+  color: var(--text);
+  opacity: 0;
+  transform: translateY(12px);
+  animation: fade-up 0.65s ease-out forwards;
+}
+
+.event-block {
+  width: min(90%, 620px);
+  margin-top: clamp(22px, 2.5vw, 34px);
+  opacity: 0;
+  transform: translateY(14px);
+  animation: fade-up 0.7s ease-out forwards;
+}
+
+.event-block h2,
+.event-block p {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.45;
+  letter-spacing: clamp(1.4px, 0.22vw, 3.8px);
+  font-size: clamp(9px, 1.55vw, 26px);
+}
+
+.event-block p {
+  margin-top: clamp(6px, 0.9vw, 12px);
+}
+
+.wedding h2,
+.wedding p {
+  color: var(--green);
+}
+
+.reception {
+  margin-top: clamp(34px, 4vw, 52px);
+}
+
+.reception h2,
+.reception p {
+  color: var(--gold);
+}
+
+.event-block a {
+  margin-top: clamp(8px, 1.2vw, 15px);
+  display: inline-block;
+  color: var(--link);
+  font-size: clamp(9px, 1.35vw, 18px);
+  letter-spacing: clamp(0.8px, 0.12vw, 1.8px);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  font-weight: 600;
+  transition: border-color 0.2s ease, transform 0.2s ease, color 0.2s ease;
+}
+
+.event-block a:hover {
+  border-bottom-color: currentColor;
+  transform: translateY(-1px);
+  color: #154d78;
+}
+
+.overlay-content .invite-line:nth-of-type(1) {
+  animation-delay: 0.12s;
+}
+
+.overlay-content .invite-line:nth-of-type(2) {
+  animation-delay: 0.2s;
+}
+
+.overlay-content .invite-line:nth-of-type(3) {
+  animation-delay: 0.28s;
+}
+
+.overlay-content .invite-line:nth-of-type(4) {
+  animation-delay: 0.36s;
+}
+
+.overlay-content .invite-line:nth-of-type(5) {
+  animation-delay: 0.44s;
+}
+
+.overlay-content .names:first-of-type {
+  animation-delay: 0.56s;
+}
+
+.overlay-content .ampersand {
+  animation-delay: 0.66s;
+}
+
+.overlay-content .names:last-of-type {
+  animation-delay: 0.76s;
+}
+
+.overlay-content .event-block.wedding {
+  animation-delay: 0.9s;
+}
+
+.overlay-content .event-block.reception {
+  animation-delay: 1.06s;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes card-float-in {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bg-breathe {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.012);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .invite-card,
+  .invite-bg,
+  .invite-line,
+  .names,
+  .ampersand,
+  .event-block {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .event-block a {
+    transition: none !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .overlay-content {
+    padding-top: 85px;
+  }
+
+  .top-gap {
+    margin-top: 52px;
+  }
+
+  .event-block {
+    width: 94%;
+  }
+}
