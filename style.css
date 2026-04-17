@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
+
 :root {
   --page-bg: #ececec;
   --mobile-invite-bg: #ead7d6;
@@ -83,7 +85,7 @@ body {
 }
 
 .name-preeti {
-  font-family: "Great Vibes", "Brush Script MT", cursive;
+  font-family: "Allura", "Great Vibes", "Brush Script MT", cursive;
 }
 
 .ampersand {
