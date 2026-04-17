@@ -267,8 +267,16 @@ body {
 }
 
 @media (max-width: 640px) {
+  html,
+  body {
+    min-height: 100%;
+    background: var(--mobile-invite-bg);
+  }
+
   .page {
+    min-height: 100svh;
     min-height: 100dvh;
+    min-height: 100lvh;
     padding: 0;
     overflow-x: hidden;
     background: var(--mobile-invite-bg);
@@ -276,7 +284,9 @@ body {
 
   .invite-card {
     width: 100vw;
+    height: 100svh;
     height: 100dvh;
+    height: 100lvh;
     max-width: none;
     margin: 0;
     background: var(--mobile-invite-bg);
@@ -290,12 +300,12 @@ body {
 
   .overlay-content {
     min-height: 100%;
-    padding-top: 92px;
+    padding-top: 118px;
     padding-bottom: 10px;
   }
 
   .top-gap {
-    margin-top: 56px;
+    margin-top: 68px;
   }
 
   .event-block {
@@ -318,7 +328,7 @@ body {
 
 @media (max-width: 480px) {
   .overlay-content {
-    padding-top: 86px;
+    padding-top: 108px;
     padding-bottom: 10px;
   }
 
