@@ -82,6 +82,10 @@ body {
   animation: fade-up 0.75s ease-out forwards;
 }
 
+.name-preeti {
+  font-family: "Great Vibes", "Brush Script MT", cursive;
+}
+
 .ampersand {
   margin: clamp(8px, 1.4vw, 16px) 0;
   font-size: clamp(36px, 6.2vw, 64px);
